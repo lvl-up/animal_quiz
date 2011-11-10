@@ -8,17 +8,8 @@ class Question
   
   attr_accessor :yes, :no
   attr_reader  :question
-  def initialize question, type=nil
+  def initialize question
     @question = question
-    @type = type
-  end
-  
-  def yes
-    @yes || @sugestion  
-  end
-  
-  def no
-    @yes || @sugestion  
   end
   
   def answer answer
@@ -54,8 +45,10 @@ def play
   if $question
     guess = $question
     while(guess.yes || guess.no)
+      last_guess = guess
       guess =  ask_question(guess)  
     end
+    
      
   else
     guess = 'elephant'
@@ -72,11 +65,20 @@ def play
     question = ask("Give me a question to distinguish a #{animal} from an #{guess}.")
     answer = ask "For a #{animal}, what is the answer to your question? (y or n)."
 
-    question = Question.new(question, answer)
+    question = Question.new(question)
     
-    if answer == YES  
+    if answer == YES
+      if guess.is_a?Question
+        last_guess.yes = question
+        question.no = guess
+        
+      end
       question.yes = Question.new(animal)
     else
+      if guess.is_a?Question
+        last_guess.no = question
+        question.yes = guess
+      end
       question.no = Question.new(animal)
     end
     
