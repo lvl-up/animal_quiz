@@ -66,7 +66,7 @@
       <file leaf-file-name="animal.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/animal.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="39" selection-start="547" selection-end="547" vertical-scroll-proportion="0.45279384">
+            <state line="58" column="23" selection-start="786" selection-end="786" vertical-scroll-proportion="0.2620424">
               <folding />
             </state>
           </provider>
@@ -682,7 +682,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/lib/animal.rb</url>
-          <line>54</line>
+          <line>59</line>
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -743,7 +743,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/animal.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="39" selection-start="547" selection-end="547" vertical-scroll-proportion="0.45279384">
+        <state line="58" column="23" selection-start="786" selection-end="786" vertical-scroll-proportion="0.2620424">
           <folding />
         </state>
       </provider>

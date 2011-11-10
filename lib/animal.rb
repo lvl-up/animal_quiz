@@ -52,7 +52,11 @@ def play
   puts "Think of an animal..."
 
   if $question
-    guess = $question.yes || $question.no ? ask_question($question) : $question
+    guess = $question
+    while(guess.yes || guess.no)
+      guess =  ask_question(guess)  
+    end
+     
   else
     guess = 'elephant'
     
