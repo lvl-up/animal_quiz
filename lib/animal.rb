@@ -39,21 +39,36 @@ def ask_question question
 
 end
 
-def play
+def get_question(animal, guess, last_guess)
+  question = Question.new(ask("Give me a question to distinguish a #{animal} from an #{guess}."))
+  answer = ask("For a #{animal}, what is the answer to your question? (y or n).")
+
+  if answer == YES
+    question.no = guess if guess.is_a? Question
+    last_guess.yes = question if last_guess
+    question.yes = Question.new(animal)
+  else
+    question.yes = guess if guess.is_a? Question
+    last_guess.no = question if last_guess
+    question.no = Question.new(animal)
+  end
+  question
+end
+
+def play                              
   puts "Think of an animal..."
 
   if $question
     guess = $question
     while(guess.yes || guess.no)
       last_guess = guess
-      guess =  ask_question(guess)  
+      guess = ask_question(guess)
+      break unless guess
     end
-    
-     
-  else
-    guess = 'elephant'
-    
   end
+  
+  guess ||= 'elephant'
+  puts "last guess is: #{last_guess}"
 
   answer = ask "Is it a #{guess}? (y or n)"
 
@@ -61,31 +76,8 @@ def play
     puts "I win. Pretty smart, aren't I?"
   else
     animal = ask "ok you win. Help me learn from my mistake before you go...\nWhat animal were you thinking of?"
-
-    question = ask("Give me a question to distinguish a #{animal} from an #{guess}.")
-    answer = ask "For a #{animal}, what is the answer to your question? (y or n)."
-
-    question = Question.new(question)
-    
-    if answer == YES
-      if guess.is_a?Question
-        last_guess.yes = question
-        question.no = guess
-        
-      end
-      question.yes = Question.new(animal)
-    else
-      if guess.is_a?Question
-        last_guess.no = question
-        question.yes = guess
-      end
-      question.no = Question.new(animal)
-    end
-    
+    question = get_question(animal, guess, last_guess)
     $question = question unless $question
-    
-
-
   end
 
 end

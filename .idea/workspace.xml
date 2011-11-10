@@ -66,7 +66,7 @@
       <file leaf-file-name="animal.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/animal.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="10" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0625">
+            <state line="46" column="47" selection-start="802" selection-end="802" vertical-scroll-proportion="-0.23529412">
               <folding />
             </state>
           </provider>
@@ -93,7 +93,7 @@
       <file leaf-file-name="animal_quiz_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/animal_quiz_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="17" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.0">
+            <state line="43" column="14" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -631,9 +631,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24938725" sideWeight="0.6705744" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24938725" sideWeight="0.6705744" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32942554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32942554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -658,7 +658,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="work so far" />
+    <option name="LAST_COMMIT_MESSAGE" value="better" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -672,6 +672,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="work so far" />
+    <MESSAGE value="better" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -682,11 +683,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/lib/animal.rb</url>
-          <line>52</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/animal.rb</url>
-          <line>84</line>
+          <line>72</line>
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -740,14 +737,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/animal_quiz_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="17" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.0">
+        <state line="43" column="14" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/animal.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="10" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0625">
+        <state line="46" column="47" selection-start="802" selection-end="802" vertical-scroll-proportion="-0.23529412">
           <folding />
         </state>
       </provider>
