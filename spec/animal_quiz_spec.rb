@@ -47,51 +47,53 @@ describe 'the quiz' do
     stdout, stdin, pid = run_animail_quiz()
 
     stdout.expect(/^Think of an animal...$/)
-    stdout.expect(/^Is it an elephant\? \(y or n\)$/)
+    stdout.expect(/^Is it a elephant\? \(y or n\)$/)
     stdin.puts 'n'
-    stdout.expect(/^ok you win. What animal where you thinking of\?$/)
-
+    stdout.expect(/^ok you win. Help me learn from my mistake before you go...$/)
+    stdout.expect(/^What animal were you thinking of\?$/)
+#
     stdin.puts animal
-    stdout.expect(/^oh a rabbit!/)
-    stdout.expect(/^Give me a question to distinguish a rabbit from an elephant.$/)
+    stdout.expect(/^Give me a question to distinguish a #{animal} from an elephant.$/)
+    
     stdin.puts 'Is it a small animal?'
-    stdout.expect(/^For a rabbit, what is the answer to your question?  (y or n).$/)
+    stdout.expect(/^For a #{animal}, what is the answer to your question\? \(y or n\).$/)
     stdin.puts 'y'
-
+#
     stdout.expect(/^Play again\? \(y or n\)/)
     stdin.puts "y"
-
+#
     stdout.expect(/^Think of an animal...$/)
-    stdout.expect(/^Is it a small animal\?$/)
+    stdout.expect(/^Is it a small animal\? \(y or n\)$/)
     stdin.puts 'y'
     stdout.expect(/^Is it a rabbit\?$/)
     stdin.puts 'n'
-
+#
     animal = 'Shih Tzu'
-    stdout.expect(/^ok you win. What animal where you thinking of\?$/)
+    stdout.expect(/^ok you win. Help me learn from my mistake before you go...$/)
+    stdout.expect(/^What animal were you thinking of\?$/)
     stdin.puts animal
-
-    stdout.expect(/^Give me a question to distinguish a rabbit from an elephant.$/)
+#
+    stdout.expect(/^Give me a question to distinguish a #{animal} from an rabbit.$/)
     stdin.puts 'Is it a kind of dog?'
-    stdout.expect(/^For a #{animal}, what is the answer to your question?  (y or n).$/)
+    stdout.expect(/^For a #{animal}, what is the answer to your question\? \(y or n\).$/)
     stdin.puts 'y'
-
+#
     stdout.expect(/^Play again\? \(y or n\)/)
     stdin.puts "y"
-
+#
     stdout.expect(/^Think of an animal...$/)
-    stdout.expect(/^Is it a small animal\?$/)
+    stdout.expect(/^Is it a small animal\? \(y or n\)$/)
     stdin.puts 'y'
-    stdout.expect(/^Is it a kind of dog\?$/)
+    stdout.expect(/^Is it a kind of dog\? \(y or n\)$/)
     stdin.puts 'y'
-
-    stdout.expect(/^Is it a #{animal}\?$/)
+#
+    stdout.expect(/^Is it a #{animal}\? \(y or n\)$/)
     stdin.puts 'y'
     stdout.expect(/^I win. Pretty smart, aren't I\?$/)
-
+#
     stdout.expect(/^Play again\? \(y or n\)/)
     stdin.puts "n"
-
+#
     process_finished(pid).should == true
   end
 
