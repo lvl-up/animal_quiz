@@ -1,11 +1,7 @@
-require 'ostruct'
-have_the_correct_answer = false
-play_again = true
-
+YES = 'y'
+NO = 'n'
 
 class Question
-
-  
   attr_accessor :yes, :no
   attr_reader  :question
   def initialize question
@@ -21,22 +17,14 @@ class Question
   end
 end
 
-
-
-YES = 'y'
-NO = 'n'
-
 def ask question
   puts question
   gets.chomp
 end
 
 def ask_question question
-
   answer = ask "#{question} (y or n)"
-  
   question.yes || question.no ? question.answer(answer) : question 
-
 end
 
 def get_question(animal, guess, last_guess)
@@ -68,7 +56,6 @@ def play
   end
   
   guess ||= 'elephant'
-  puts "last guess is: #{last_guess}"
 
   answer = ask "Is it a #{guess}? (y or n)"
 
