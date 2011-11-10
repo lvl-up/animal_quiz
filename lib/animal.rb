@@ -44,7 +44,7 @@ def ask_question question
 
   answer = ask "#{question} (y or n)"
   
-  $question.yes || $question.no ? question.answer(answer) : question 
+  question.yes || question.no ? question.answer(answer) : question 
 
 end
 
