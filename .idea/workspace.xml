@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a0bb36d-2965-450d-83a6-4824454e5acf" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/question_spec.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/animal.rb" afterPath="$PROJECT_DIR$/lib/animal.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/animal_quiz_spec.rb" afterPath="$PROJECT_DIR$/spec/animal_quiz_spec.rb" />
     </list>
     <ignored path="animal_quiz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,25 +67,7 @@
       <file leaf-file-name="animal.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/animal.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="112" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.6191052">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="question_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/question_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="18" selection-end="287" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="my_active_record.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.IntelliJIdea10/config/plugins/ruby/rubystubs/rubystubs19/my_active_record.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="10" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
+            <state line="49" column="2" selection-start="1146" selection-end="1146" vertical-scroll-proportion="-0.42857143">
               <folding />
             </state>
           </provider>
@@ -92,7 +76,7 @@
       <file leaf-file-name="animal_quiz_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/animal_quiz_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="14" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
+            <state line="43" column="11" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -151,8 +135,8 @@
         <option value="$PROJECT_DIR$/.rvmrc" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/lib/test.rb" />
-        <option value="$PROJECT_DIR$/spec/animal_quiz_spec.rb" />
         <option value="$PROJECT_DIR$/spec/question_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/animal_quiz_spec.rb" />
         <option value="$PROJECT_DIR$/lib/animal.rb" />
       </list>
     </option>
@@ -187,7 +171,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,8 +222,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,7 +253,7 @@
     <option name="referencePos" value="0" />
     <option name="showLabels" value="true" />
   </component>
-  <component name="RunManager" selected="RSpec.the quiz">
+  <component name="RunManager" selected="Ruby.animal">
     <configuration default="false" name="question_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="animal_quiz" />
@@ -641,17 +625,17 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39766082" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24938725" sideWeight="0.6705744" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892704" sideWeight="0.67134506" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32865497" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32865497" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -682,7 +666,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="tidy up" />
+    <option name="LAST_COMMIT_MESSAGE" value="working" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -698,6 +682,7 @@
     <MESSAGE value="work so far" />
     <MESSAGE value="better" />
     <MESSAGE value="tidy up" />
+    <MESSAGE value="working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -705,6 +690,10 @@
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/animal_quiz_spec.rb</url>
           <line>109</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/animal.rb</url>
+          <line>83</line>
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -714,11 +703,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.IntelliJIdea10/config/plugins/ruby/rubystubs/rubystubs19/my_active_record.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="10" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" />
@@ -739,21 +723,23 @@
         <state line="13" column="0" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/question_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="18" selection-end="287" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/animal_quiz_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="14" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
+        <state line="43" column="11" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.IntelliJIdea10/config/plugins/ruby/rubystubs/rubystubs19/my_active_record.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="10" selection-start="207" selection-end="207" vertical-scroll-proportion="0.027472528">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/animal.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="112" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.6191052">
+        <state line="49" column="2" selection-start="1146" selection-end="1146" vertical-scroll-proportion="-0.42857143">
           <folding />
         </state>
       </provider>

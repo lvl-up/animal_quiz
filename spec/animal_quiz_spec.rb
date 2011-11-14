@@ -97,17 +97,17 @@ describe 'the quiz' do
     process_finished(pid).should == true
   end
 
-#  it 'should ask you if you want to quit' do
-#    stdout, stdin, pid = run_animail_quiz()
-#    
-#    stdout.expect(/^Think of an animal...$/)
-#    stdout.expect(/^Is it an elephant\? \(y or n\)$/)
-#    stdin.puts "y"
-#    stdout.expect(/^I win. Pretty smart, aren't I\?$/)
-#    stdout.expect(/^Play again\? \(y or n\)/)
-#    stdin.puts "n"
-#    
-#    process_finished(pid).should == true
-#    
-#  end
+  #it 'should ask you if you want to quit' do
+  #  stdout, stdin, pid = run_animail_quiz()
+  #  
+  #  stdout.expect(/^Think of an animal...$/)
+  #  stdout.expect(/^Is it an elephant\? \(y or n\)$/)
+  #  stdin.puts "y"
+  #  stdout.expect(/^I win. Pretty smart, aren't I\?$/)
+  #  stdout.expect(/^Play again\? \(y or n\)/)
+  #  stdin.puts "n"
+  #  
+  #  process_finished(pid).should == true
+  #  
+  #end
 end
