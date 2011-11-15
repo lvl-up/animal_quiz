@@ -1,38 +1,21 @@
-require 'pp'
+$LOAD_PATH.unshift("#{File.dirname(__FILE__)}/lib")
+require 'question'
+
 YES = 'y'
 NO = 'n'
 
-class Question
-  attr_accessor :yes, :no, :parent
-  attr_reader :question
 
-  def initialize question, parent = nil
-    @question = question
-    @parent = parent
-  end
-
-  def answer answer
-    answer == YES ? @yes : @no
-  end
-
-  def insert question, final_answer
-    final_answer == YES ? self.yes = question : self.no = question
-    question.parent = self
-  end
-
-  def to_s
-    @question
-  end
-end
 
 def ask question
-  puts question
-  gets.chomp
-end
+  case question
+    when Question
+      answer = ask "#{question} (y or n)"
+      question.yes || question.no ? [answer, question.answer(answer)] : [answer, question]
+    else
+      puts question
+      gets.chomp
+  end
 
-def ask_question question
-  answer = ask "#{question} (y or n)"
-  question.yes || question.no ? [answer, question.answer(answer)] : [answer, question]
 end
 
 def get_question(actual_animal, suggested_animal)
@@ -58,11 +41,9 @@ def play
   puts "Think of an animal..."
 
   if $question
-    next_question = $question
-    last_answer = nil
-    while (next_question.yes || next_question.no)
-      last_answer, next_question = ask_question(next_question)
-      break unless next_question
+    next_question, last_answer = $question, nil
+    while next_question && (next_question.yes || next_question.no)
+      last_answer, next_question = ask(next_question)
     end
   end
 
@@ -76,12 +57,8 @@ def play
   else
     animal = ask "ok you win. Help me learn from my mistake before you go...\nWhat animal were you thinking of?"
     new_question = get_question(animal, suggested_animal)
-    if $question
-      last_question.insert(new_question, last_answer)
-    else
-      $question = new_question
-    end
-    puts 'hello'
+    
+    $question ? last_question.insert(new_question, last_answer) : $question = new_question
   end
 
 end

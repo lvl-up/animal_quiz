@@ -4,7 +4,10 @@ require 'pty'
 
 
 def run_animail_quiz
-  PTY.spawn "ruby ../lib/animal.rb"
+  Dir.chdir('../') do
+    PTY.spawn "ruby quiz.rb"  
+  end
+  
 end
 
 def process_finished pid
@@ -56,7 +59,7 @@ describe 'the quiz' do
     stdout.expect(/^Give me a question to distinguish a #{animal} from an elephant.$/)
     
     stdin.puts 'Is it a small animal?'
-    stdout.expect(/^For a #{animal}, what is the answer to your question\? \(y or n\).$/)
+    stdout.expect(/^For a #{animal}, what is the answer to your question\? \(y or n\)$/)
     stdin.puts 'y'
 #
     stdout.expect(/^Play again\? \(y or n\)/)
@@ -75,7 +78,7 @@ describe 'the quiz' do
 #
     stdout.expect(/^Give me a question to distinguish a #{animal} from an rabbit.$/)
     stdin.puts 'Is it a kind of dog?'
-    stdout.expect(/^For a #{animal}, what is the answer to your question\? \(y or n\).$/)
+    stdout.expect(/^For a #{animal}, what is the answer to your question\? \(y or n\)$/)
     stdin.puts 'y'
 #
     stdout.expect(/^Play again\? \(y or n\)/)
