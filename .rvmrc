@@ -1,1 +1,1 @@
-rvm --create use 1.9.2@animal_quiz
+rvm --create use 2.1.1@animal_quiz
