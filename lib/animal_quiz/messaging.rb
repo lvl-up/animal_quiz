@@ -1,7 +1,5 @@
 module AnimalQuiz
-  module CommandLine
     module Messaging
-
       def messaging_interface interface=nil
         return @messaging_interface unless interface
         @messaging_interface = interface
@@ -27,5 +25,4 @@ module AnimalQuiz
         ask question, valid_input: valid_input
       end
     end
-  end
 end

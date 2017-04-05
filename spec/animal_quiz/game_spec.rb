@@ -2,13 +2,14 @@ require 'animal_quiz/game'
 module AnimalQuiz
 
   describe Game do
+
     let(:messaging_interface) do
       input_stream = StringIO.new.tap do |io|
         def io.gets *args
           NO
         end
       end
-      CommandLine::MessagingInterface.new(StringIO.new, input_stream)
+      CommandLine::MessagingInterface.new(output_device: StringIO.new, input_device: input_stream)
     end
 
     RSpec::Matchers.define :output do |expected|

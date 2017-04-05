@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift(__dir__)
-require 'command_line/messaging'
+require 'messaging'
 require 'command_line/messaging_interface'
 require 'question_tree_node'
 
@@ -16,7 +16,7 @@ module AnimalQuiz
     YES_OR_NO = %W(#{YES} #{NO})
 
     attr_reader :default_question
-    include CommandLine::Messaging
+    include Messaging
 
     def initialize(messaging_interface=CommandLine::MessagingInterface.new, default_question = QuestionTreeNode.new('elephant'))
       messaging_interface(messaging_interface)
@@ -45,13 +45,20 @@ module AnimalQuiz
     def learn_new_animal(incorrect_guess)
       new_animal = QuestionTreeNode.new(ask LOSING_MSG)
 
-      distinguishing_question = QuestionTreeNode.new(ask(DISTINGUISH_MSG % [new_animal, incorrect_guess])).tap do |q|
+      distinguishing_question_text = ask(DISTINGUISH_MSG % [new_animal, incorrect_guess])
+
+      distinguishing_question = QuestionTreeNode.new(distinguishing_question_text).tap do |q|
         answer_to_question = ask(HOW_TO_DISTINGUISH_MSG % new_animal.to_s, valid_input: YES_OR_NO)
         q.insert(new_animal, answer_to_question)
         q.insert(incorrect_guess, opposite(answer_to_question))
       end
 
-      self.default_question = distinguishing_question if incorrect_guess == default_question
+      self.default_question = distinguishing_question if first_time_game_played?(incorrect_guess)
+    end
+
+
+    def first_time_game_played?(incorrect_guess)
+      incorrect_guess == default_question
     end
 
     def opposite answer
